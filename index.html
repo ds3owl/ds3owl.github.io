@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ds3owl — Projects</title>
+<meta name="description" content="Free, open-source tools by ds3owl: IsleBar, a live bar in the Windows 11 taskbar, and FRLG Minigame Partner, for the Trainer Card minigame star in Pokémon FireRed and LeafGreen on Switch.">
+<link rel="canonical" href="https://ds3owl.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ds3owl — Projects">
+<meta property="og:url" content="https://ds3owl.github.io/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ds3owl",
+  "url": "https://ds3owl.github.io/"
+}
+</script>
+<style>
+:root { --bg:#fbfbfd; --ink:#1d1d1f; --muted:#6e6e73; --card:#ffffff; --line:#e5e5ea; --accent:#0a66d6; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#07070b; --ink:#f5f5f7; --muted:#a1a1aa; --card:#121219; --line:#26262f; --accent:#6aa8ff; } }
+* { box-sizing:border-box; }
+html, body { margin:0; background:var(--bg); color:var(--ink); }
+body { font-family:"Segoe UI Variable Display","Segoe UI",system-ui,-apple-system,sans-serif; line-height:1.55; }
+a { color:var(--accent); text-decoration:none; }
+.wrap { max-width:960px; margin:0 auto; padding:0 16px; }
+header { padding:80px 0 36px; }
+h1 { font-size:clamp(40px,7vw,64px); line-height:1.02; margin:0; letter-spacing:-.02em; }
+.lede { font-size:clamp(18px,2.4vw,22px); color:var(--muted); margin:14px 0 0; max-width:620px; }
+.links { margin-top:18px; font-size:15px; }
+.grid { display:grid; grid-template-columns:repeat(2,1fr); gap:20px; margin-top:8px; }
+.card { display:flex; flex-direction:column; background:var(--card); border:1px solid var(--line); border-radius:18px; overflow:hidden; color:var(--ink); }
+.card img { display:block; width:100%; aspect-ratio:1200/630; object-fit:cover; border-bottom:1px solid var(--line); background:#f2f2f4; }
+.card .body { padding:20px 22px 22px; display:flex; flex-direction:column; flex:1; }
+.card h2 { font-size:24px; margin:0 0 6px; letter-spacing:-.01em; }
+.card p { margin:0 0 16px; color:var(--muted); font-size:16px; flex:1; }
+.card .tags { font-size:13px; color:var(--muted); margin:0 0 16px; }
+.card .cta { display:flex; gap:10px; flex-wrap:wrap; }
+.btn { display:inline-block; padding:9px 18px; border-radius:999px; font-weight:600; font-size:15px; }
+.btn.primary { background:var(--ink); color:var(--bg); }
+.btn.ghost { border:1px solid var(--line); color:var(--ink); }
+footer { color:var(--muted); font-size:13px; padding:70px 0 40px; }
+@media (max-width:720px) { .grid { grid-template-columns:1fr; } header { padding-top:52px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>ds3owl</h1>
+    <p class="lede">Small, free and open-source tools I built because I needed them.</p>
+    <div class="links"><a href="https://github.com/ds3owl">GitHub</a> · <a href="https://github.com/sponsors/ds3owl">Sponsor</a></div>
+  </header>
+
+  <div class="grid">
+    <a class="card" href="https://ds3owl.github.io/islebar/">
+      <img src="https://ds3owl.github.io/islebar/media/og.png" alt="IsleBar">
+      <div class="body">
+        <h2>IsleBar</h2>
+        <p>A live bar in the Windows 11 taskbar. Ask a question to launch Claude Code or Codex CLI, then see the agent's status. Also now playing, timers and file search.</p>
+        <div class="tags">Windows 11 · MIT</div>
+        <div class="cta"><span class="btn primary">Learn more</span></div>
+      </div>
+    </a>
+    <a class="card" href="https://ds3owl.github.io/frlg-minigame-partner/">
+      <img src="https://ds3owl.github.io/frlg-minigame-partner/media/og.png" alt="FRLG Minigame Partner">
+      <div class="body">
+        <h2>FRLG Minigame Partner</h2>
+        <p>Get the minigame star on your Trainer Card in Pokémon FireRed and LeafGreen on Nintendo Switch, even on your own. Your PC fills the other player slots.</p>
+        <div class="tags">Windows · ESP32 · AGPL-3.0</div>
+        <div class="cta"><span class="btn primary">Learn more</span></div>
+      </div>
+    </a>
+  </div>
+
+  <footer>© ds3owl</footer>
+</div>
+</body>
+</html>
